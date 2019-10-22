@@ -1,20 +1,26 @@
+<!DOCTYPE html>
 <html>
-    <h1>HTML Form</h1>
+  <head>
+    <link href="exercise1.css" type="text/css" rel="stylesheet" />
+  </head>
   <body>
-    <p><label for="first name">First name:</label>
-    <input type="text" id="first name" name="first name" size="10"></p>
-    <p><label for="last name">Last name:</label>
-    <input type="text" id="last name" name="last name" size="10"></p>
-    <p><label for="email">E-mail:</label>
-    <input type="text" id="email" name="email" size="10"></p>
-    <br><input type="radio" id="undergrad" name="class" value="UG">
-    <label for="undergrad">Undergraduate Student</label>
-    <br><input type="radio" id="grad" name="class" value="G">
-    <label for="grad">Graduate Student</label>
-    <form>
-      <br>
-      <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-    </form>
+    <div>
+      <h1 class="header">CONTACT US</h1>
+      <p>
+      <input type="text" id="first name" name="first name" size="10" placeholder="First Name"></p>
+      <p>
+      <input type="text" id="last name" name="last name" size="10" placeholder="Last Name"></p>
+      <p>
+      <input type="text" id="email" name="email" size="10" placeholder="Email"></p>
+      <br><input type="radio" id="undergrad" name="class" value="UG">
+      <label for="undergrad">Undergraduate Student</label>
+      <br><input type="radio" id="grad" name="class" value="G">
+      <label for="grad">Graduate Student</label>
+      <form>
+        <br>
+          <input class="button" type="submit" value="Submit">
+          <input class="button" type="reset" value="Reset">
+      </form>
+    </div>
   </body>
 </html>
