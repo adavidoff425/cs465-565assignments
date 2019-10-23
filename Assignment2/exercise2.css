@@ -1,0 +1,142 @@
+* {
+  background-color: transparent;
+}
+
+#page {
+  width: 100%;
+}
+
+#content {
+  margin: 20px 0;
+  width: auto;
+}
+
+a:hover, a:active, a:link, a:visited {
+  color: black;
+}
+
+#content a:link:after, #content a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 0.8em;
+  font-weight: normal; 
+}
+
+#top-parent li.util-top {
+  display: inline;
+  float: right;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95em;
+  padding: 4px 10px;
+  border-right: 1px solid #6d8501;
+}
+
+#top-parent #util-top-1 {
+  padding-right: 0;
+  border-right: 0 none;
+}
+
+#util-top-1 a.util-dropper {
+  padding-right: 11px; 
+  background: transparent url(/sites/all/themes/pdx_primary/images/white-arrow.png) no-repeat right 5px;
+}
+
+.mega-group {
+  float: left;
+  margin: 0 4px 6px 0;
+  padding: 0;
+}
+
+#utility-nav .mega-group ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4px;
+  padding-top: 2px;
+}
+
+.mega-drop li:before {
+  content: "\00BB \0020";
+}
+
+#utility-nav #top-parent .mega-group li {
+  padding: 0;
+  margin-left: 8px;
+  float: left;
+  width: 135px;
+  color: #474334;
+}
+
+#utility-nav #top-parent .mega-group li a {
+  color: #fff;
+}
+
+#utility-nav #top-parent .mega-drop li a:hover, #utility-nav #top-parent .mega-drop li a:focus {
+  color: #cae4e6;
+}
+
+.view {
+  float: none;
+}
+
+#main-wrap {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: -120px;
+  position: relative;
+  z-index: 5;
+}
+
+.front #main {
+  width: auto;
+}
+
+.container #main {
+  background-color: #fff;
+  padding: 15px 30px 0px 30px;
+}
+
+#main #content {
+  float: right;
+  width: 680px;
+}
+
+.front #main #content {
+  width: 100%;
+  margin-left: 0px;
+}.
+
+#skip-link {
+  position: absolute;
+  left: -999em;
+}
+
+#header {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+#header-wrap {
+  height: 230px;
+  width: 100%;
+  background: #141c00 no-repeat center top;
+  position: relative;
+  z-index: 0;
+}
+
+#header-overlay {
+  height: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 960px;
+  z-index: 100;
+}
+
