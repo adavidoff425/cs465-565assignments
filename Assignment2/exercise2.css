@@ -1,14 +1,34 @@
 * {
-  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
-#page {
-  width: 100%;
+body, div, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  font: 12px/1.5em Lucida Grande, Lucida Sans Unicoe, sans-serif;
+  background-color: #404040;
+  color: #566e10;
+  margin: 0;
+  padding: 0;
 }
 
 #content {
   margin: 20px 0;
   width: auto;
+}
+
+a, a:link, a:visited, a:active {
+  color: #A8B400;
+  text-decoration: none;
 }
 
 a:hover, a:active, a:link, a:visited {
@@ -21,14 +41,34 @@ a:hover, a:active, a:link, a:visited {
   font-weight: normal; 
 }
 
-#top-parent li.util-top {
+#utility-nav #top-parent li.util-top {
+  margin-right: 1px;
+  padding-right: 0;
+  border-right: 0 none;
+  padding: 0px;
   display: inline;
   float: right;
-  padding: 0;
   margin: 0;
   font-size: 0.95em;
-  padding: 4px 10px;
   border-right: 1px solid #6d8501;
+}
+  
+#google-appliance-block-form {
+    top: 60px;
+    position: absolute;
+    width: 165px;
+    background-color: #e8e9e3;
+    font-size: 11px;
+    right: 0;
+    z-index: 90;
+    border: 1px solid #e8e9e3;
+    height: 23px;
+    overflow: hidden;
+}
+
+#google-appliance-block-form .container-inline {
+    border: 1px solid #e8e9e3;
+    background: #e8e9e3 url(pdx.edu/sites/all/themes/pdx_respond/images/search-icon.png) no-repeat 4px center;
 }
 
 #top-parent #util-top-1 {
@@ -47,6 +87,23 @@ a:hover, a:active, a:link, a:visited {
   padding: 0;
 }
 
+ol, ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0 0 15px 2em;
+}
+
+li {
+  display: list-item;
+}
+
+ul #top-parent {
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  padding-left: 0px;
+}
+
 #utility-nav .mega-group ul {
   margin: 0;
   padding: 0;
@@ -56,6 +113,20 @@ a:hover, a:active, a:link, a:visited {
 
 .mega-drop li:before {
   content: "\00BB \0020";
+}
+
+#utility-nav {
+  float: right;
+  position: absolute;
+  width: auto;
+  top: 62px;
+  z-index: 99;
+  right: 0;
+  height: 24px;
+}
+
+#utility-nav h2 {
+  display: none;
 }
 
 #utility-nav #top-parent .mega-group li {
@@ -124,19 +195,30 @@ a:hover, a:active, a:link, a:visited {
 }
 
 #header-wrap {
-  height: 230px;
+  height: 160px;
   width: 100%;
-  background: #141c00 no-repeat center top;
+  background: #566e10 no-repeat center top;
   position: relative;
   z-index: 0;
 }
 
 #header-overlay {
-  height: 0;
+  width: 100%;
+  max-width: 960px;
+  height: 65px;
+  margin-bottom: -65px;
+  display: block;
   margin: 0 auto;
   padding: 0;
   position: relative;
-  width: 960px;
   z-index: 100;
+  color: #566e10;
 }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
