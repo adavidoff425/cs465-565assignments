@@ -1,0 +1,66 @@
+.container {
+  display: grid;
+  list-style: none;
+  grid-gap: 5px 5px;
+  grid-template-columns: 175px 175px 175px 175px;
+  grid-template-rows: 75px 75px 75px;
+  grid-template-areas:
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve";
+}
+
+li {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.eleven {
+  grid-area: eleven;
+}
+
+.twelve {
+  grid-area: twelve;
+}
