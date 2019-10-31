@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script type="text/javascript">
+            let number = prompt("Enter a number: ");
+            let reverse = [];
+            for(let i = number.length; i > 0; i--){
+                reverse[number.length - i] = number[i-1];
+            }
+            for(let j = 0; j < number.length; j++){
+                console.log(reverse[j]);
+            }
+        </script>
+    </body>
+</html>
