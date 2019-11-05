@@ -33,6 +33,8 @@ div {
 form {
     margin: auto;
     text-align: center;
+    display: flex;
+    align-content: center;
 }
 
 .button {

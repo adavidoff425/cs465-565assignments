@@ -98,6 +98,24 @@ ul #top-parent {
   height: 24px;
 }
 
+.mega-drop-inner-wrap {
+  visibility: hidden;
+}
+
+#navigation {
+  position: relative;
+  z-index: 100;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#navigation li {
+  display: block;
+  float: left;
+  height: 35px;
+  padding: 0px 15px 0px 0px;
+}
+
 #utility-nav h2 {
   display: none;
 }
@@ -141,10 +159,60 @@ ul #top-parent {
   color: #566e10;
 }
 
+#main {
+  margin-top: -50px;
+}
+
+#main-menu {
+  position: relative;
+  z-index: 1;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
+}
+
+#block-views-home-story-buckets-block-1 > .content {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas: 
+    "block1 block2 block3"
+    "block4 block5 block6";
+  grid-row-gap: 80px;
+  grid-column-gap: 30px;
+  margin: 50px 50px auto 150px;
+}
+
+.view-content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.view-display-id-block-1 {
+  grid-area: "block1";
+}
+
+.view-display-id-attachment-1 {
+  grid-area: "block2";
+}
+
+.view-display-id-attachment-2 {
+  grid-area: "block3";
+}
+
+.view-display-id-attachment-3 {
+  grid-area: "block4";
+}
+
+.view-display-id-attachment-4 {
+  grid-area: "block5";
+}
+
+.view-display-id-attachment-5 {
+  grid-area: "block6";
 }
