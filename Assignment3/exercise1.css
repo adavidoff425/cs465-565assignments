@@ -1,4 +1,5 @@
-ckground: transparent;
+* {
+background: transparent;
 }
 
 body {
