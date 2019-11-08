@@ -1,0 +1,32 @@
+* {
+  list-style: none;
+}
+
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0;
+}
+
+li {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+.second-row > li {
+  height: 150px;
+  display: inline-block;
+  margin-right: 0;
+}
+
+.three {
+  width: 80%;
+}
+
+.two {
+  width: 8%;
+}
