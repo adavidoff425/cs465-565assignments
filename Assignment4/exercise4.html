@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body onload="getsize()" onresize="getsize()">
+<div id="height">
+</div>
+
+<div id="width">
+</div>
+
+<script type="text/javascript">
+function getsize()
+{
+  getheight();
+  getwidth();
+}
+function getheight()
+{
+  var height = document.documentElement.clientHeight;
+  document.getElementById('height').innerHTML = "<p>Height: " + height + "</p>";
+}
+
+function getwidth()
+{
+  var width = document.documentElement.clientWidth;
+  document.getElementById('width').innerHTML = "<p>Width: " + width + "</p>";
+}
+</script>
+</body>
+</html>
