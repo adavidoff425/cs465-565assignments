@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body id="body">
+  <button type="button" id="button">Change Background</button>
+  <script type="text/javascript">
+    let body = document.getElementById("body");
+    document.getElementById("button").onclick = function () {
+      let color = "#";
+      let hex_value;
+      let hex_letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+      for(let i = 0; i < 6; ++i) {
+        hex_value = Math.floor(Math.random() * 16);
+        if(hex_value > 10)
+          color += hex_letters[hex_value%10];
+        else
+          color += hex_value;
+      }
+      console.log(color);
+      body.style.backgroundColor = color;
+    };
+  </script>
+</body>
+</html>
