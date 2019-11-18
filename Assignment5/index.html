@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="exercise3.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="form-main">
+      <h1 class="header">Contact Us</h1>
+      <form action="/submit" method="post">
+        <div class="form-group">
+          <label for="firstname">Name: </label>
+          <input type="text" class="form-control" id="firstname">
+        </div>
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class=form-group">
+          <label for="comments">Comments: </label>
+          <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        <button type="reset" class="btn btn-secondary" id="reset">Reset</button>
+    </div>
+  <script type="text/javascript">
+  document.getElementById('submit').onclick = function()
+  {
+    var name = document.getElementById('firstname').value;
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('comments').value;
+    console.log('Name: ' + name);
+    console.log('Email: ' + email);
+    console.log('Message: ' + msg);
+  };
+
+  document.getElementById('reset').onclick = function() 
+  {
+    document.getElementById('firstname').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('comments').value = "";
+  };
+  </script>
+  </body>
+</html>
+
