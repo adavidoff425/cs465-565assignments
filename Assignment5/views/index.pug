@@ -1,7 +1,7 @@
 extends layout
-doctype html
+
 head
-  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
 .form-main
   h1.header Contact Us
   form(action='/submit' method='post')
@@ -11,7 +11,7 @@ head
     .form-group
       label(for='email') Email: 
       input#email.form-control(type='email')
-    .(class='form-group"')
+    .form-group
       label(for='comments') Comments: 
       textarea#comments.form-control(rows='3')
     button#submit.btn.btn-primary(type='submit') Submit
